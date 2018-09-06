@@ -1,5 +1,6 @@
 const routes = {
   Home: '/',
+  Lyrics: '/lyrics/track',
 };
 
 

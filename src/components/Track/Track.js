@@ -7,12 +7,14 @@ import {
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+import routes from '../../config/routes';
+
 
 const Track = ({ track }) => (
   <Card>
     <p>Track: {track.track_name}</p>
     <p>Album: {track.album_name}</p>
-    <Link to="">View Lyrics</Link>
+    <Link to={`${routes.Lyrics}/${track.track_id}`}>View Lyrics</Link>
   </Card>
 );
 

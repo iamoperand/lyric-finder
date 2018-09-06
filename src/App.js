@@ -10,6 +10,7 @@ import { Provider } from './context';
 
 import Home from './components/Home';
 import NotFound from './components/NotFound';
+import Lyrics from './components/Lyrics';
 
 
 class App extends Component {
@@ -18,7 +19,8 @@ class App extends Component {
       <Provider>
         <Router>
           <Switch>
-            <Route path={routes.Home} component={Home} />
+            <Route exact path={routes.Home} component={Home} />
+            <Route path={`${routes.Lyrics}/:id`} component={Lyrics} />
             <Route component={NotFound} />
           </Switch>
         </Router>
