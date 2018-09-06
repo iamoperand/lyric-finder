@@ -1,3 +1,3 @@
 ## Lyricer
 
-Live [here](https://lyricer-netlify.com)
+Live [here](https://lyricer.netlify.com)
